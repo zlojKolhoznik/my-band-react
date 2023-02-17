@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: #f4f4ef;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.name {
+    font-size: 2em;
+    text-align: center;
+    color: #333;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title {
+    font-size: 1.2em;
+    text-align: center;
+    color: #777;
 }
-
-.App-link {
-  color: #61dafb;
+ul {
+    list-style-type: none;
+    margin: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 5px #ccc;
+    transition-duration: 0.5s;
+}
+.member:hover {
+    box-shadow: 0 0 10px #ccc;
+    background-color: #f4f4ef;
+    transition-duration: 0.5s;
+}
+.member a {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.album {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition-duration: .5s;
+}
+.album:hover {
+    box-shadow: 0 0 10px #ccc;
+    background-color: #e5e5d8;
+    transition-duration: 0.5s;
+}
+.album-title {
+    font-size: 1.3em;
+    color: #333;
+    margin: 10px;
+}
+.album-cover{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    transition-duration: 0.5s;
+}
+.album-cover:hover {
+    box-shadow: 0 0 10px #ccc;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+.album-link img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    transition-duration: 0.5s;
+}
+.album-link img:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
 }
